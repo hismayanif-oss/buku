@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <div class="row mb-4 mt-4">
+            <img src="book-edu.png" alt="Book Education" class="img-fluid mx-auto d-block" style="width: 200px;">
+            
+            <div class="col-12 mt-4">
+                <input class="form-control form-control-lg" type="text" placeholder="Search" id="keyword" name="search">
+            </div>
+            
+            <div class="col-12 mt-3 d-flex align-items-center flex-wrap gap-3">
+                <div class="form-check form-check-inline m-0">
+                    <input class="form-check-input" type="radio" name="filter" value="title" id="filter_title" checked>
+                    <label class="form-check-label" for="filter_title">Title</label>
+                </div>
+                <div class="form-check form-check-inline m-0">
+                    <input class="form-check-input" type="radio" name="filter" value="author" id="filter_author">
+                    <label class="form-check-label" for="filter_author">Author</label>
+                </div>
+                <div class="form-check form-check-inline m-0">
+                    <input class="form-check-input" type="radio" name="filter" value="publisher" id="filter_publisher">
+                    <label class="form-check-label" for="filter_publisher">Publisher</label>
+                </div>
+                <div class="form-check form-check-inline m-0 d-flex align-items-center gap-2">
+                    <input class="form-check-input" type="radio" name="filter" value="title_year" id="filter_title_year">
+                    <label class="form-check-label text-nowrap" for="filter_title_year">Title & Year :</label>
+                    <input type="number" id="year_input" class="form-control form-control-sm" value="2018" style="width: 100px;">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 mb-4 book">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <img src="buku1.jpeg" width="150" height="200" style="margin-bottom:10px;" alt="Buku">
+                        <h5 class="card-title title">Menguasai Pemrograman Berorientasi Objek</h5>
+                        <p class="card-text author">Ade Rahmat Iskandar</p>
+                        <p class="card-text text-muted publisher">Informatika <small class="year">2020</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4 mb-4 book">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <img src="buku2.jpeg" width="150" height="200" style="margin-bottom:10px;" alt="Buku">
+                        <h5 class="card-title title">Dasar-Dasar Pemrograman dengan .NET</h5>
+                        <p class="card-text author">Ade Rahmat Iskandar</p>
+                        <p class="card-text text-muted publisher">Informatika <small class="year">2019</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4 mb-4 book">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <img src="buku3.jpeg" width="150" height="200" style="margin-bottom:10px;" alt="Buku">
+                        <h5 class="card-title title">Metodologi Pengembangan Sistem Informasi</h5>
+                        <p class="card-text author">Samiaji Sarosa</p>
+                        <p class="card-text text-muted publisher">Indeks <small class="year">2017</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4 mb-4 book">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <img src="buku4.png" width="150" height="200" style="margin-bottom:10px;" alt="Buku">
+                        <h5 class="card-title title">Struktur Data</h5>
+                        <p class="card-text author">Rosa A.S</p>
+                        <p class="card-text text-muted publisher">Modula <small class="year">2018</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4 mb-4 book">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <img src="buku5.jpeg" width="150" height="200" style="margin-bottom:10px;" alt="Buku">
+                        <h5 class="card-title title">Dasar Pemrograman Python 3</h5>
+                        <p class="card-text author">Abdul Kadir</p>
+                        <p class="card-text text-muted publisher">Andi Publisher <small class="year">2018</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4 mb-4 book">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <img src="buku6.jpeg" width="150" height="200" style="margin-bottom:10px;" alt="Buku">
+                        <h5 class="card-title title">Sistem Basis Data dan SQL</h5>
+                        <p class="card-text author">Didik Setiyadi</p>
+                        <p class="card-text text-muted publisher">Mitra Wacana Media <small class="year">2020</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4 mb-4 book">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <img src="buku7.jpeg" width="150" height="200" style="margin-bottom:10px;" alt="Buku">
+                        <h5 class="card-title title">Perancangan Basis Data Teori</h5>
+                        <p class="card-text author">Suhartini</p>
+                        <p class="card-text text-muted publisher">Deepublish <small class="year">2020</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4 mb-4 book">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <img src="buku8.jpeg" width="150" height="200" style="margin-bottom:10px;" alt="Buku">
+                        <h5 class="card-title title">Teori dan Praktek Sistem Operasi</h5>
+                        <p class="card-text author">Zaid Romegar Mair</p>
+                        <p class="card-text text-muted publisher">Deepublish <small class="year">2018</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scriptp12.js"></script>
+</body>
+</html>
